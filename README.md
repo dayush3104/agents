@@ -250,6 +250,11 @@ B.Tech, IIT Kanpur
 This feature ensures the LiveKit voice agent feels **smoother, faster, and more human-like**.  
 It maintains continuous TTS playback while staying responsive to user speech.
 
+## 📝 Submission Details  
+For the complete **submission-format README** (including implementation details, testing steps, environment setup, and PR checklist),  
+👉 **[click here to view README_ayush_dixit.md »](examples/voice_agents/README_ayush_dixit.md)**  
+
+
 ✨ **No more awkward pauses - just seamless, intelligent conversations!** ✨
 
 
