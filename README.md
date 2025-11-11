@@ -1,4 +1,4 @@
-# 🔊 LiveKit Agents — Interrupt Handler Feature  
+# 🔊 LiveKit Agents - Interrupt Handler Feature  
 > **Branch:** `feature/livekit-interrupt-handler-ayush-dixit`  
 > **Author:** Ayush Dixit  
 > **Main file updated:** `examples/voice_agents/basic_agent.py`
@@ -27,18 +27,16 @@ The agent now **ignores filler words** (like *“acha”*, *“umm”*) while sp
 ✅ Keeps interaction seamless and professional
 
 ---
+## 🧩 Core Concept 
 🎙️ USER speaks
-↓
+     ↓
 ASR generates partial transcripts
-↓
+     ↓
 Agent logic decides ⤵️
-├── Filler word (uh, acha, hmm...) ➜ IGNORE (continue speaking)
-└── Meaningful interruption (stop, question...) ➜ INTERRUPT immediately
+  ├── Filler word (uh, acha, hmm...) ➜ IGNORE (continue speaking)
+  └── Meaningful interruption (stop, question...) ➜ INTERRUPT immediately
 
 
-When the agent is **quiet**:
-- Filler → asks for clarification (“What would you like me to do?”)  
-- Meaningful → responds normally.
 
 ---
 
@@ -186,9 +184,10 @@ python examples/voice_agents/basic_agent.py console
 
 **Update filler words dynamically at runtime**
 
-curl -X POST http://localhost:8088/update_filler
--H "Content-Type: application/json"
--d '{"room":"mock_room","ignored_words":"acha,achha,haan","language":"hi"}
+curl -X POST http://localhost:8088/update_filler \
+  -H "Content-Type: application/json" \
+  -d '{"room":"mock_room","ignored_words":"acha,achha,haan","language":"hi"}'
+
 
 
 **Response:**
@@ -251,7 +250,8 @@ B.Tech, IIT Kanpur
 This feature ensures the LiveKit voice agent feels **smoother, faster, and more human-like**.  
 It maintains continuous TTS playback while staying responsive to user speech.
 
-✨ **No more awkward pauses — just seamless, intelligent conversations!** ✨
+✨ **No more awkward pauses - just seamless, intelligent conversations!** ✨
 
-## 🧩 Core Concept  
+
+
 
