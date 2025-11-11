@@ -85,6 +85,27 @@ target/
 profile_default/
 ipython_config.py
 
+# Python / venv
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Editor settings
+.vscode/
+.idea/
+
+# local logs / env
+enhanced_agent_logs.jsonl
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+
 # pyenv
 #   For a library or package, you might want to ignore these files since the code is
 #   intended to run in multiple environments; otherwise, check them in:
